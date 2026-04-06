@@ -1076,17 +1076,23 @@ grid-template-columns:1fr;
     min-height: 100vh;
     background-size: cover;
     background-position: center;
-    padding-top:20px;
+    padding-top:0;
   }
 
   .hero-buttons{
-
 gap:0;
 margin-top:0;
 }
 
+.earthHealing img{
+  display: none;
 
+}
 
+.service-image{
+
+  display: none;
+}
 
 .client-card img{
   width: 260px;
@@ -1202,6 +1208,22 @@ padding:0;
 }
 
 
+    /* About Page*/
+.myStorySection2 img{
+
+order: -1;
+}
+.earthHealingSection1 img{
+
+  order: -1;
+
+}
+
+.earthHealingSection3 img{
+  order: -1;
+
+
+}
 
  /*.footer-grid{
   grid-template-columns: 1fr;
