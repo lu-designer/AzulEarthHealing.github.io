@@ -627,7 +627,14 @@ object-fit:cover;
   margin-top: var(--space-md);
   font-size: 0.85rem;
   opacity: 0.6;
+  color: var(--color-bg);
 }
+
+.footer-bottom a{
+
+  color:whitesmoke;
+}
+
 
 
 /* ===== ABOUT PAGE ===== */
