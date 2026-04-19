@@ -19,30 +19,37 @@
 
 <body>
 
-<!-- NAVBAR -->
 
-<header class="navbar-white">
 
-<div class="container nav-wrapper">
 
-<div class="logo">
-  <a href="index.html">
+<!-- NAVBAR NEW -->
+<header class="navbar-dark ">
+  <div class="container nav-container">
+    
+    <!-- Logo -->
+    <div class="logo">
+     <a href="index.html">
   <img src="images//logo-Grant.jpg" alt="Grant James Logo"></a>
-</div>
+    </div>
 
-<nav>
-<ul>
+    <!-- Nav Links -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="EarthHealing.html">Earth Healing</a>
+      <a href="Service.html">Service</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
 
-  <li><a href="Service.html">Service</a></li>
-  <li><a href="About.html">About</a></li>
-  <li><a href="Contact.html">Contact</a></li>
+    <!-- Hamburger -->
+    <div class="hamburger-dark" id="hamburger-dark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-</ul>
-</nav>
-
-</div>
-
+  </div>
 </header>
+
 
 
   <!-- Contact Section -->
@@ -102,6 +109,8 @@ Contact me to learn more about Earth Healing and how we can work together to sup
 
     <!-- Links -->
     <div class="footer-col">
+                  <a href="EarthHealing.html">Earth Healing</a>
+
     <a href="About.html">About</a>
       <a href="Service.html">Service</a>
       <a href="Contact.html">Contact</a>
@@ -128,13 +137,22 @@ Contact me to learn more about Earth Healing and how we can work together to sup
   </div>
 
   <div class="footer-bottom text-center">
-    <p>© 2026 Azul Earth Healing. All rights reserved | Site by <a href="https://luluxu.net" target="_blank">Lulu Xu</a></p>
+    <p>© 2026 Azul Earth Healing. All rights reserved.</p>
   </div>
 </footer>
 
 
 
 <script src="script.js"></script>
+<script> 
+ const hamburger = document.getElementById("hamburger-dark");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+</script>
 
 
 

@@ -21,27 +21,36 @@
 
 <!-- NAVBAR -->
 
-<header class="navbar-white">
 
-<div class="container nav-wrapper">
 
-<div class="logo">
-  <a href="index.html">
+<!-- NAVBAR NEW -->
+<header class="navbar-dark ">
+  <div class="container nav-container">
+    
+    <!-- Logo -->
+    <div class="logo">
+     <a href="index.html">
   <img src="images//logo-Grant.jpg" alt="Grant James Logo"></a>
-</div>
+    </div>
 
-<nav>
-<ul>
- <li><a href="Service.html">Service</a></li>
-  <li><a href="About.html">About</a></li>
-  <li><a href="Contact.html">Contact</a></li>
+    <!-- Nav Links -->
+    <nav class="nav-menu" id="navMenu">
+      <a href="EarthHealing.html">Earth Healing</a>
+      <a href="Service.html">Service</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html">Contact</a>
+    </nav>
 
-</ul>
-</nav>
+    <!-- Hamburger -->
+    <div class="hamburger-dark" id="hamburger-dark">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
-</div>
-
+  </div>
 </header>
+
 
 
 
@@ -115,7 +124,7 @@
 </section>-->
 
 
-<!--  IMAGE GALLERY -->
+<!--  IMAGE GALLERY 
 <section class="section">
   <div class=" reveal">
 
@@ -127,13 +136,11 @@
         <img src="images/gallery3.jpg" alt="Gallery Image">
         <img src="images/gallery4.jpg" alt="Gallery Image">
 
-        <!-- duplicate for seamless loop -->
         <img src="images/gallery1.jpg" alt="Gallery Image">
         <img src="images/gallery2.jpg" alt="Gallery Image">
         <img src="images/gallery3.jpg" alt="Gallery Image">
         <img src="images/gallery4.jpg" alt="Gallery Image">
         
-        <!-- duplicate for seamless loop -->
         <img src="images/gallery1.jpg" alt="Gallery Image">
         <img src="images/gallery2.jpg" alt="Gallery Image">
         <img src="images/gallery3.jpg" alt="Gallery Image">
@@ -145,11 +152,11 @@
 
   </div>
 </section>
+-->
 
 
 
-
-<!-- Earth Healing -->
+<!-- Earth Healing 
 
 
 <section class="section">
@@ -216,7 +223,7 @@
 
   </div>
 </section>
-
+-->
 
 
 <!-- Calendly 
@@ -254,6 +261,8 @@
 
     <!-- Links -->
     <div class="footer-col">
+                  <a href="EarthHealing.html">Earth Healing</a>
+
       <a href="About.html">About</a>
       <a href="Service.html">Service</a>
       <a href="Contact.html">Contact</a>
@@ -280,7 +289,7 @@
   </div>
 
   <div class="footer-bottom text-center">
-    <p>© 2026 Azul Earth Healing. All rights reserved | Site by <a href="https://luluxu.net" target="_blank">Lulu Xu</a></p>
+    <p>© 2026 Azul Earth Healing. All rights reserved.</p>
   </div>
 </footer>
 
@@ -288,6 +297,15 @@
 
 <script src="script.js"></script>
 
+<script> 
+ const hamburger = document.getElementById("hamburger-dark");
+  const navMenu = document.getElementById("navMenu");
+
+  hamburger.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+  });
+</script>
 
 
 </body>
