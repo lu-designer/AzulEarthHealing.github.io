@@ -1248,6 +1248,19 @@ margin-top:0;
     grid-template-columns:1fr;
   }
 
+
+  .pricing-grid {
+  align-items: stretch;
+  padding: 0 ;
+  padding-bottom: var(--space-sm);
+}
+
+.pricing-grid img{
+display: none;
+
+}
+
+
 .services-interactive{
 margin-top: var(--space-md);
 }
