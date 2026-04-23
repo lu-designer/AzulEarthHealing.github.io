@@ -689,11 +689,14 @@ object-fit:cover;
 
 .footer-col a,
 .footer-col p {
-  display: block;
   margin-bottom: var(--space-xs);
   color: white;
   opacity: 0.7;
   font-size: 0.95rem;
+
+    display: flex;
+  align-items: center; /* vertical alignment */
+  gap: 10px; /* space between icon + text */
 }
 
 .footer-col a:hover {
