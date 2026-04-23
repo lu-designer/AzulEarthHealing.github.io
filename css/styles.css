@@ -1391,5 +1391,19 @@ order: -1;
     right: 0;
   }
 
+
+    .footer-grid {
+    grid-template-columns: 1fr; /* stack everything */
+    text-align: left;
+  }
+
+  .footer-logo {
+    text-align: left;
+  }
+
+  .footer-col {
+    margin-bottom: var(--space-md);
+  }
+
 }
 
