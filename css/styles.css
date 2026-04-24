@@ -298,8 +298,8 @@ a.inline-link:hover::after {
 
 .nav-menu a {
  font-size: 1.4rem;
+ font-family: var(--font-heading);
   letter-spacing: 1px;
-
   text-decoration: none;
   color: white;
   font-weight: 400;
@@ -314,6 +314,7 @@ a.inline-link:hover::after {
 
 /* HAMBURGER on dark bg */
 .hamburger {
+  
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -321,17 +322,36 @@ a.inline-link:hover::after {
 
   position: relative;   /* 🔥 important */
   z-index: 1100;
+
+  width: 28px;
+  height: 20px;
+
 }
+
+
 
 .hamburger span {
-    width: 26px;
-  height: 3px;
-    transform-origin: center; /* 🔥 important */
-  background: rgba(255,255,255,0.9);
-
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background: white;
+  left: 0;
+  transition: all 0.3s ease;
+  transform-origin: center; /* 🔥 important */
 }
 
+/* spacing (more refined than default) */
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 9px; width: 70%; } /* shorter middle line */
+.hamburger span:nth-child(3) { bottom: 0; }
+
+
 /* ACTIVE STATE */
+
+.hamburger:active {
+  transform: scale(0.95);
+}
+
 .hamburger.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -357,16 +377,25 @@ a.inline-link:hover::after {
 
   position: relative;   /* 🔥 important */
   z-index: 1100;
+
+  width: 28px;
+  height: 20px;
 }
 
 .hamburger-dark span {
-    width: 26px;
-  height: 3px;
-    transform-origin: center; /* 🔥 important */
+    position: absolute;
+  width: 100%;
+  height: 2px;
   background:var(--color-primary);
+  left: 0;
+  transition: all 0.3s ease;
+  transform-origin: center; /* 🔥 important */
 }
 
-/* ACTIVE STATE */
+.hamburger-dark span:nth-child(1) { top: 0; }
+.hamburger-dark span:nth-child(2) { top: 9px; width: 70%; } /* shorter middle line */
+.hamburger-dark span:nth-child(3) { bottom: 0; }
+
 .hamburger-dark.active span:nth-child(1) {
   transform: translateY(9px) rotate(45deg);
 }
@@ -378,6 +407,7 @@ a.inline-link:hover::after {
 .hamburger-dark.active span:nth-child(3) {
   transform: translateY(-9px) rotate(-45deg);
 }
+
 
 
 .logo img {
