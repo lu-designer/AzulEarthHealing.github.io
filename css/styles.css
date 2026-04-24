@@ -387,6 +387,15 @@ a.inline-link:hover::after {
 
 }
 
+
+.navbar .logo {
+  margin-left: -20px;
+}
+
+.navbar-dark .logo {
+  margin-left: -20px;
+}
+
 /* ===== HOMEPAGE: Hero ===== */
 
 
