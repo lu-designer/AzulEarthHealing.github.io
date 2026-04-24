@@ -227,7 +227,7 @@ a.inline-link:hover::after {
 
 /* NAVBAR BASE */
 .navbar {
-  position:absolute;
+  position:fixed;
   left: 0;
   right: 0;   /* 🔥 THIS is the fix */  
   top: 0;
@@ -243,7 +243,7 @@ a.inline-link:hover::after {
 
 
 .navbar-dark {
-  position: absolute;
+  position: fixed;
   left: 0;
   right: 0;   /* 🔥 THIS is the fix */  
   top: 0;
@@ -328,6 +328,7 @@ a.inline-link:hover::after {
   height: 3px;
     transform-origin: center; /* 🔥 important */
   background: rgba(255,255,255,0.9);
+
 }
 
 /* ACTIVE STATE */
@@ -388,10 +389,10 @@ a.inline-link:hover::after {
 }
 
 
+ /* make logo align left to the rest of page content */
 .navbar .logo {
   margin-left: -20px;
 }
-
 .navbar-dark .logo {
   margin-left: -20px;
 }
