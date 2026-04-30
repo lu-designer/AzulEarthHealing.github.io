@@ -801,6 +801,11 @@ object-fit:cover;
 
 }
 
+.acknowledgementText{
+
+  color: var(--color-primary);
+}
+
 
 /* ===== ABOUT PAGE: Quote ===== */
 
