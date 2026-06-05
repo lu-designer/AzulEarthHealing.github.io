@@ -352,10 +352,10 @@ a.inline-link:hover::after {
 
 /* HAMBURGER on dark bg */
 .hamburger {
-  
+
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap:  6px ;
   cursor: pointer;
 
   position: relative;   /* 🔥 important */
@@ -369,6 +369,7 @@ a.inline-link:hover::after {
 
 
 .hamburger span {
+
   position: absolute;
   width: 100%;
   height: 2px;
@@ -459,10 +460,10 @@ a.inline-link:hover::after {
 
  /* make logo align left to the rest of page content */
 .navbar .logo {
-  margin-left: -20px;
+  margin-left: -10px;
 }
 .navbar-dark .logo {
-  margin-left: -20px;
+  margin-left: -10px;
 }
 
 
@@ -1487,6 +1488,16 @@ order: -1;
 
 
 @media screen and (max-width: 768px) {
+
+/* make logo align with content-left on phone */
+.navbar .logo {
+  margin-left: -30px;
+}
+.navbar-dark .logo {
+  margin-left:-30px;
+}
+
+
 
 /* make logo smaller on phone */
 .logo img {
