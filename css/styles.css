@@ -100,7 +100,7 @@ color:var(--color-primary);
 
 
 section h2 {
-  margin-bottom:var(--space-lg);
+  margin-bottom:var(--space-md);
 }
 
 .section p {
